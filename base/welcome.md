@@ -27,7 +27,7 @@ Workshop materials are all posted on github, and publicly available
 
 * This mRNAseq Workshop
 
-[https://ucdavis-bioinformatics-training.github.io/2020-mRNA_Seq_Workshop/](https://ucdavis-bioinformatics-training.github.io/2020-mRNA_Seq_Workshop/)
+[https://ucdavis-bioinformatics-training.github.io/2020-mRNA_Seq_Workshop/](https://ucdavis-bioinformatics-training.github.io/2021-June-RNA-Seq-Analysis/)
 
 ### Workshop Goals
 
