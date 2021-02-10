@@ -32,9 +32,9 @@ navigation:
 
   - heading: Prerequisites
   - title: CLI
-    url: base/cli_prerequisite
+    url: base/cli_prerequisites
   - title: R
-    url: base/r_prerequisite
+    url: base/r_prerequisites
 
   - heading: Data Reduction
   - title: Files and Filetypes
