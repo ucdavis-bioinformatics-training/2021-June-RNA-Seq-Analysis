@@ -42,7 +42,7 @@
 1. First we need to index the genome for STAR. Lets pull down a slurm script to index the Ensembl version of the mouse genome.
 
     ```bash
-    wget https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2020-mRNA_Seq_Workshop/master/software_scripts/scripts/star_index.slurm
+    wget https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2021-June-RNA-Seq-Analysis/master/software_scripts/scripts/star_index.slurm
     less star_index.slurm
     ```
 

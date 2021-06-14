@@ -67,20 +67,20 @@ library(RColorBrewer)
 In the R console run the following command
 
 ```r
-download.file("https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2020-mRNA_Seq_Workshop/master/data_analysis/DE_Analysis.Rmd", "DE_Analysis.Rmd")
+download.file("https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2021-June-RNA-Seq-Analysis/master/data_analysis/DE_Analysis.Rmd", "DE_Analysis.Rmd")
 ```
 
 ## Download the data file for the workshop document and preview/open it
 
-This is the the counts file generated after running [Generating Summarized Counts](https://ucdavis-bioinformatics-training.github.io/2020-mRNA_Seq_Workshop/data_reduction/counts).
+This is the the counts file generated after running [Generating Summarized Counts](https://ucdavis-bioinformatics-training.github.io/2021-June-RNA-Seq-Analysis/data_reduction/counts).
 
 I've also uploaded to the github repo. In the R console run the following command.
 ```r
-download.file("https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2020-mRNA_Seq_Workshop/master/datasets/rnaseq_workshop_counts.txt", "rnaseq_workshop_counts.txt")
+download.file("https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2021-June-RNA-Seq-Analysis/master/datasets/rnaseq_workshop_counts.txt", "rnaseq_workshop_counts.txt")
 ```
 
 ```r
-download.file("https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2020-mRNA_Seq_Workshop/master/datasets/ensembl_hg_100.tsv", "ensembl_hg_100.tsv")
+download.file("https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2021-June-RNA-Seq-Analysis/master/datasets/ensembl_hg_100.tsv", "ensembl_hg_100.tsv")
 ```
 
 ### Edit the file YAML portion

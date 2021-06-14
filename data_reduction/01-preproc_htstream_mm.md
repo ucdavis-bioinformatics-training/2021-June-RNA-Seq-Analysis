@@ -308,7 +308,7 @@ Paste contents of mouse_rrna.fa and save
 This is *really* cheating, but if all else fails, download the file as follows:
 ```bash
 cd /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References
-wget https://github.com/ucdavis-bioinformatics-training/2020-mRNA_Seq_Workshop/raw/master/data_reduction/mouse_rrna.fasta
+wget https://github.com/ucdavis-bioinformatics-training/2021-June-RNA-Seq-Analysis/raw/master/data_reduction/mouse_rrna.fasta
 ```
 
 ### Using HTStream to count ribosomal rna (not remove, but just to count the occurrences).
@@ -565,7 +565,7 @@ We can now run the preprocessing routine across all samples on the real data usi
 
 ```bash
 cd /share/workshop/mrnaseq_workshop/$USER/rnaseq_example  # We'll run this from the main directory
-wget https://ucdavis-bioinformatics-training.github.io/2020-mRNA_Seq_Workshop/software_scripts/scripts/hts_preproc.slurm
+wget https://ucdavis-bioinformatics-training.github.io/2021-June-RNA-Seq-Analysis/software_scripts/scripts/hts_preproc.slurm
 less hts_preproc.slurm
 ```
 
@@ -798,7 +798,7 @@ Or in case of emergency, download this copy: [HTSMultiQC-cleaning-report_multiqc
 
     ```/bash
     cd /share/workshop/mrnaseq_workshop/$USER/rnaseq_example  # We'll run this from the main directory
-    wget https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2020-mRNA_Seq_Workshop/master/software_scripts/scripts/summarize_stats.R
+    wget https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2021-June-RNA-Seq-Analysis/master/software_scripts/scripts/summarize_stats.R
 
     module load R
     R CMD BATCH summarize_stats.R

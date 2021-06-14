@@ -10,7 +10,7 @@ This workshop will include a rich collection of lectures and hands-on sessions w
 
 To get the most out of this course, please complete the prerequisite material in [command line](base/cli_prerequisites) and [R](base/r_prerequisites) before the course, and contact us with any questions.
 
-Participants must have access to a computer with a reliable connection to the internet, current versions of [R version 4.0](https://cloud.r-project.org/) and [Rstudio](https://rstudio.com/products/rstudio/download/#download), and an application that allows them to ssh into a server (see this [page](https://ucdavis-bioinformatics-training.github.io/2020-mRNA_Seq_Workshop/prerequisites/cli/logging-in))
+Participants must have access to a computer with a reliable connection to the internet, current versions of [R version 4.0](https://cloud.r-project.org/) and [Rstudio](https://rstudio.com/products/rstudio/download/#download), and an application that allows them to ssh into a server (see this [page](https://ucdavis-bioinformatics-training.github.io/2021-June-RNA-Seq-Analysis/prerequisites/cli/logging-in))
 
 ### FAQ
 
@@ -18,7 +18,7 @@ Participants must have access to a computer with a reliable connection to the in
 
 **What are the prerequisites?** … To get the most out of this course, please complete the prerequisite material in [command line](base/cli_prerequisites) and [R](base/r_prerequisites) before the course, and contact us with any questions.
 
-**What do I need to bring?** … You will need access to a computer with a reliable connection to the internet, current versions of [R version 4.0](https://cloud.r-project.org/) and [Rstudio](https://rstudio.com/products/rstudio/download/#download), and an application that allows them to ssh into a server (see this [page](https://ucdavis-bioinformatics-training.github.io/2020-mRNA_Seq_Workshop/prerequisites/cli/logging-in)). If your department does not allow you to install software on your computer, please contact us ahead of time.
+**What do I need to bring?** … You will need access to a computer with a reliable connection to the internet, current versions of [R version 4.0](https://cloud.r-project.org/) and [Rstudio](https://rstudio.com/products/rstudio/download/#download), and an application that allows them to ssh into a server (see this [page](https://ucdavis-bioinformatics-training.github.io/2021-June-RNA-Seq-Analysis/prerequisites/cli/logging-in)). If your department does not allow you to install software on your computer, please contact us ahead of time.
 
 **Can I bring my own data?** … We will provide datasets for use during the workshop, as this helps to keep the workshop moving. There may be time, however, to discuss your own datasets and how you might work with them outside of the workshop.
 
