@@ -8,9 +8,9 @@ mkdir -p ${outpath}
 
 cd ${outpath}
 
-wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M27/GRCm38.primary_assembly.genome.fa.gz
-gunzip GRCm38.primary_assembly.genome.fa.gz
-FASTA="../GRCm38.primary_assembly.genome.fa"
+wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M27/GRCm39.primary_assembly.genome.fa.gz
+gunzip GRCm39.primary_assembly.genome.fa.gz
+FASTA="../GRCm39.primary_assembly.genome.fa"
 
 wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M27/gencode.vM27.annotation.gtf.gz
 gunzip gencode.vM27.annotation.gtf.gz

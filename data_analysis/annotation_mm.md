@@ -6,11 +6,11 @@ Annotation from [BioMart](https://uswest.ensembl.org/biomart/martview/) with Ens
 
 <img src="annotation_mm_figures/annotation_figures1.png" alt="annotation_figures1" width="80%" style="border:5px solid #ADD8E6;"/>
 
-1. First select the dataset, for gene expression experiment select Ensembl Genes 100 (version 100). The current version as of this workshop.
+1. First select the dataset, for gene expression experiment select Ensembl Genes 104 (version 104). The current version as of this workshop.
 
 <img src="annotation_mm_figures/annotation_figures2.png" alt="annotation_figures2" width="80%" style="border:5px solid #ADD8E6;"/>
 
-1. Then the Organism, Here Mouse genes which is based on the GRCm38.p6 genome.
+1. Then the Organism, Here Mouse genes which is based on the GRCm39 genome.
 
 <img src="annotation_mm_figures/annotation_figures3.png" alt="annotation_figures3" width="80%" style="border:5px solid #ADD8E6;"/>
 

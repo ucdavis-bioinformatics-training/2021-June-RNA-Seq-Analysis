@@ -14,7 +14,7 @@
 
     We will need:
 
-    *   Genome sequence, primary assembly (GRCm38)
+    *   Genome sequence, primary assembly (GRCm39)
     *   Basic gene annotation (CHR)
 
     <img src="alignment_mm_figures/MM_genome_sequences.png" alt="MM_genome_sequences" width="80%" style="border:5px solid #ADD8E6;"/>
@@ -68,9 +68,9 @@
 
     cd ${outpath}
 
-    wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M27/GRCm38.primary_assembly.genome.fa.gz
-    gunzip GRCm38.primary_assembly.genome.fa.gz
-    FASTA="../GRCm38.primary_assembly.genome.fa"
+    wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M27/GRCm39.primary_assembly.genome.fa.gz
+    gunzip GRCm39.primary_assembly.genome.fa.gz
+    FASTA="../GRCm39.primary_assembly.genome.fa"
 
     wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M27/gencode.vM27.annotation.gtf.gz
     gunzip gencode.vM27.annotation.gtf.gz

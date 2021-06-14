@@ -24,8 +24,8 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
 **IF** will need to run this command to update some reference changes our group made last night.
 
 ```bash
-rm -rf  /share/biocore/workshops/2020_mRNAseq/References/star_2.7.3a_index_GRCm38.p6
-ln -s /share/biocore/workshops/2020_mRNAseq/References/star_2.7.3a_index_GRCm38.p6 /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/.
+rm -rf  /share/biocore/workshops/2020_mRNAseq/References/star_2.7.3a_index_GRCm39
+ln -s /share/biocore/workshops/2020_mRNAseq/References/star_2.7.3a_index_GRCm39 /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/.
 ```
 
 ---
@@ -269,7 +269,7 @@ What does stranded and unstranded mean? Which is better and why? [Stranded vs Un
 
     <img src="alignment_mm_figures/index_igv3.png" alt="index_igv3" width="80%" style="border:5px solid #ADD8E6;"/>
 
-1. The first thing we want to do is load the Human genome. Click on "Genomes" in the menu and choose "Human (GRCm38/mm10)".
+1. The first thing we want to do is load the Human genome. Click on "Genomes" in the menu and choose "Mouse (GRCm39)".
 
     <img src="alignment_mm_figures/index_igv4.png" alt="index_igv4" width="80%" style="border:5px solid #ADD8E6;"/>
 
@@ -350,7 +350,7 @@ What does stranded and unstranded mean? Which is better and why? [Stranded vs Un
     echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
     sample=`sed "${SLURM_ARRAY_TASK_ID}q;d" samples.txt`
-    REF="References/star_2.7.3a_index_GRCm38.p6"
+    REF="References/star_2.7.3a_index_GRCm39"
 
     outpath='02-STAR_alignment'
     [[ -d ${outpath} ]] || mkdir ${outpath}
