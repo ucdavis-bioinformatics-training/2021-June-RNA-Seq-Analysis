@@ -206,12 +206,12 @@ What does stranded and unstranded mean? Which is better and why? [Stranded vs Un
        --genomeDir ../References/star.overlap100.gencode.M27 \
        --outSAMtype BAM SortedByCoordinate \
        --quantMode GeneCounts \
-       --outFileNamePrefix mouse_110_WT_C_R1_ \
+       --outFileNamePrefix mouse_110_WT_C.star_ \
        --readFilesCommand zcat \
-       --readFilesIn mouse_110_WT_C_R1.fastq.gz mouse_110_WT_C_R2.fastq.gz
+       --readFilesIn mouse_110_WT_C.htstream_R1.fastq.gz mouse_110_WT_C.htstream_R2.fastq.gz
     ```
 
-    In the command, we are telling star to count reads on a gene level ('--quantMode GeneCounts'), the prefix for all the output files will be mouse_110_WT_C.streamed_, the command to unzip the files (zcat), and finally, the input file pair.
+    In the command, we are telling star to count reads on a gene level ('--quantMode GeneCounts'), the prefix for all the output files will be mouse_110_WT_C.star_, the command to unzip the files (zcat), and finally, the input file pair.
 
     Once finished please 'exit' the srun session. You'll know you were successful when your back on tadpole
 
@@ -234,22 +234,22 @@ What does stranded and unstranded mean? Which is better and why? [Stranded vs Un
 
     ```bash
     cd /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/HTS_testing
-    samtools index mouse_110_WT_C_R1_Aligned.sortedByCoord.out.bam
+    samtools index mouse_110_WT_C.star_Aligned.sortedByCoord.out.bam
     ```
 
     **IF** for some reason it didn't finish, is corrupted or you missed the session, you can copy over a completed copy
 
     ```bash
-    cp -r /share/biocore/workshops/2020_mRNAseq_July/HTS_testing/mouse_110_WT_C_R1_Aligned.sortedByCoord.out.bam* /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/HTS_testing
+    cp -r /share/biocore/workshops/2020_mRNAseq_July/HTS_testing/star_Aligned.sortedByCoord.out.bam* /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/HTS_testing
     ```
 
-2. Transfer mouse_110_WT_C.streamed_Aligned.sortedByCoord.out.bam and mouse_110_WT_C.streamed_Aligned.sortedByCoord.out.bam.bai (the index file) to your computer using scp or winSCP, or copy/paste from cat [sometimes doesn't work].
+2. Transfer mouse_110_WT_C.star_Aligned.sortedByCoord.out.bam and mouse_110_WT_C.star_Aligned.sortedByCoord.out.bam.bai (the index file) to your computer using scp or winSCP, or copy/paste from cat [sometimes doesn't work].
 
     In Mac/Linux, Windows users use WinSCP. In a new shell session on my laptop. **NOT logged into tadpole**. Replace [your_username] with your username
     ```bash
     mkdir ~/rnaseq_workshop
     cd ~/rnaseq_workshop
-    scp [your_username]@tadpole.genomecenter.ucdavis.edu:/share/workshop/mrnaseq_workshop/[your_username]/rnaseq_example/HTS_testing/mouse_110_WT_C_R1_Aligned.sortedByCoord.out.bam* .
+    scp [your_username]@tadpole.genomecenter.ucdavis.edu:/share/workshop/mrnaseq_workshop/[your_username]/rnaseq_example/HTS_testing/mouse_110_WT_C.star_Aligned.sortedByCoord.out.bam* .
     ```
 
     Its ok of the mkdir command fails ("File exists") because we aleady created the directory earlier.
