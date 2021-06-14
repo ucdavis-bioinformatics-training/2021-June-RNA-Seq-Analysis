@@ -52,8 +52,8 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
     #SBATCH --time=60
     #SBATCH --mem=15000 # Memory pool for all cores (see also --mem-per-cpu)
     #SBATCH --partition=production
-    #SBATCH --reservation=mrnaseq_workshop
-    #SBATCH --account=mrnaseq_workshop
+    #SBATCH --reservationworkshop
+    #SBATCH --accountworkshop
     #SBATCH --output=slurmout/salmon-index_%A.out # File to which STDOUT will be written
     #SBATCH --error=slurmout/salmon-index_%A.err # File to which STDERR will be written
     #SBATCH --mail-type=ALL
@@ -149,8 +149,8 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
     #SBATCH --time=1440
     #SBATCH --mem=20000 # Memory pool for all cores (see also --mem-per-cpu)
     #SBATCH --partition=production
-    #SBATCH --reservation=mrnaseq_workshop
-    #SBATCH --account=mrnaseq_workshop
+    #SBATCH --reservationworkshop
+    #SBATCH --accountworkshop
     #SBATCH --output=slurmout/salmon_%A_%a.out # File to which STDOUT will be written
     #SBATCH --error=slurmout/salmon_%A_%a.err # File to which STDERR will be written
 

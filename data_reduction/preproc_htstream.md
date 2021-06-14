@@ -181,13 +181,13 @@ When building a new pipeline, it is almost always a good idea to use a small sub
 
     <div class="output">msettles@tadpole:/share/workshop/mrnaseq_workshop/msettles/rnaseq_example/HTS_testing$     ls -lah
     total 29M
-    drwxrwsr-x 2 msettles mrnaseq_workshop    7 May 31 12:51 .
-    drwxrwsr-x 6 msettles mrnaseq_workshop    7 May 31 12:48 ..
-    -rw-rw-r-- 1 msettles mrnaseq_workshop  60K May 31 12:51 SampleAC1.stats.json
-    -rw-rw-r-- 1 msettles mrnaseq_workshop 6.8M May 31 12:51 SampleAC1.stats_R1.fastq.gz
-    -rw-rw-r-- 1 msettles mrnaseq_workshop 7.5M May 31 12:51 SampleAC1.stats_R2.fastq.gz
-    -rw-rw-r-- 1 msettles mrnaseq_workshop 6.8M May 31 12:48 SampleAC1.subset_R1.fastq.gz
-    -rw-rw-r-- 1 msettles mrnaseq_workshop 7.5M May 31 12:48 SampleAC1.subset_R2.fastq.gz
+    drwxrwsr-x 2 msettlesworkshop    7 May 31 12:51 .
+    drwxrwsr-x 6 msettlesworkshop    7 May 31 12:48 ..
+    -rw-rw-r-- 1 msettlesworkshop  60K May 31 12:51 SampleAC1.stats.json
+    -rw-rw-r-- 1 msettlesworkshop 6.8M May 31 12:51 SampleAC1.stats_R1.fastq.gz
+    -rw-rw-r-- 1 msettlesworkshop 7.5M May 31 12:51 SampleAC1.stats_R2.fastq.gz
+    -rw-rw-r-- 1 msettlesworkshop 6.8M May 31 12:48 SampleAC1.subset_R1.fastq.gz
+    -rw-rw-r-- 1 msettlesworkshop 7.5M May 31 12:48 SampleAC1.subset_R2.fastq.gz
     </div>
 
     * *Which files were generated from hts\_Stats?*
@@ -489,8 +489,8 @@ When you are done, type "q" to exit.
 #SBATCH --time=60
 #SBATCH --mem=3000 # Memory pool for all cores (see also --mem-per-cpu)
 #SBATCH --partition=production
-#SBATCH --reservation=mrnaseq_workshop
-#SBATCH --account=mrnaseq_workshop
+#SBATCH --reservationworkshop
+#SBATCH --accountworkshop
 #SBATCH --array=1-16
 #SBATCH --output=slurmout/htstream_%A_%a.out # File to which STDOUT will be written
 #SBATCH --error=slurmout/htstream_%A_%a.err # File to which STDERR will be written
