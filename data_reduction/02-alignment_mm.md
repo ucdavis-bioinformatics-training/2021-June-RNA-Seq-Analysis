@@ -269,7 +269,7 @@ What does stranded and unstranded mean? Which is better and why? [Stranded vs Un
 
     <img src="alignment_mm_figures/index_igv3.png" alt="index_igv3" width="80%" style="border:5px solid #ADD8E6;"/>
 
-1. The first thing we want to do is load the Human genome. Click on "Genomes" in the menu and choose "Mouse (GRCm39)".
+1. The first thing we want to do is load the Mouse genome. Click on "Genomes" in the menu and choose "Mouse (GRCm38/mm10)". **I know this is the wrong genome, but IGV hasn't updated to the most recent yet and for our purpose here it should still work.**
 
     <img src="alignment_mm_figures/index_igv4.png" alt="index_igv4" width="80%" style="border:5px solid #ADD8E6;"/>
 
