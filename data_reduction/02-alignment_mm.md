@@ -203,7 +203,7 @@ What does stranded and unstranded mean? Which is better and why? [Stranded vs Un
     module load star
     STAR \
     --runThreadN 8 \
-       --genomeDir ../References/star.overlap100.gencode.M25 \
+       --genomeDir ../References/star.overlap100.gencode.M27 \
        --outSAMtype BAM SortedByCoordinate \
        --quantMode GeneCounts \
        --outFileNamePrefix mouse_110_WT_C_R1_ \

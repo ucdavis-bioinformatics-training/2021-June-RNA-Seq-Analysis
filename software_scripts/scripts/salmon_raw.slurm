@@ -18,8 +18,8 @@ hostname
 
 outdir="02-Salmon_raw_alignment"
 sampfile="samples.txt"
-REF="References/salmon_gencode.vM25.index"
-GTF="References/gencode.vM25.annotation.gtf"
+REF="References/salmon_gencode.vM27.index"
+GTF="References/gencode.vM27.annotation.gtf"
 
 SAMPLE=`head -n ${SLURM_ARRAY_TASK_ID} $sampfile | tail -1`
 R1="00-RawData/$SAMPLE/${SAMPLE}.R1.fastq.gz"
