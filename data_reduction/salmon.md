@@ -43,8 +43,8 @@
     #SBATCH --time=60
     #SBATCH --mem=15000 # Memory pool for all cores (see also --mem-per-cpu)
     #SBATCH --partition=production
-    #SBATCH --reservationworkshop
-    #SBATCH --accountworkshop
+    #SBATCH --reservation=workshop
+    #SBATCH --account=workshop
     #SBATCH --output=slurmout/salmon-index_%A.out # File to which STDOUT will be written
     #SBATCH --error=slurmout/salmon-index_%A.err # File to which STDERR will be written
     #SBATCH --mail-type=ALL
@@ -140,8 +140,8 @@
     #SBATCH --time=1440
     #SBATCH --mem=20000 # Memory pool for all cores (see also --mem-per-cpu)
     #SBATCH --partition=production
-    #SBATCH --reservationworkshop
-    #SBATCH --accountworkshop
+    #SBATCH --reservation=workshop
+    #SBATCH --account=workshop
     #SBATCH --output=slurmout/salmon_%A_%a.out # File to which STDOUT will be written
     #SBATCH --error=slurmout/salmon_%A_%a.err # File to which STDERR will be written
 
