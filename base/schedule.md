@@ -10,9 +10,10 @@ All posted times are **Pacific** time zone. At least one break will be provided 
 | **9:00 am**  | Introduction to the workshop and the Core |
 | **9:45 am**  | Getting set up                            |
 | **10:00 am** | Command Line Prerequisites / Review       |
+| **11:00 am**  | Break                      |
+| **11:10 am**  | Files and file types                      |
 | **12:00 pm** | Lunch                                     |
 | **1:00 pm**  | Technology Talk by Lutz F.                |
-| **2:00 pm**  | Files and file types                      |
 | **3:00 pm**  | Prepare dataset                           |
 | **5:00 pm**  | Zoom session ends                         |
 
