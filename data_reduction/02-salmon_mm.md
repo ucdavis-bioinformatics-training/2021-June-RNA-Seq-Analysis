@@ -23,7 +23,7 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
 
 1. To align our data we will need the transcriptome (fasta) and annotation (gtf) for mouse. There are many places to find them, but we are going to get it from the [GENCODE](https://www.gencodegenes.org/mouse/).
 
-    We need to first get the urls for the and protein coding genes. For RNAseq we want to use the protein coding transcript sequences and basic gene annotation. At the time of this workshop the current version of GENCODE is *M29*. You will want to update the scripts to use the current version.
+    We need to first get the urls for the and protein coding genes. For RNAseq we want to use the protein coding transcript sequences and basic gene annotation. At the time of this workshop the current version of GENCODE is *M27*. You will want to update the scripts to use the current version.
 
     We will need:
 
@@ -71,10 +71,10 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
     mkdir -p ${outpath}
     cd ${outpath}
 
-    wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M29/gencode.vM29.pc_transcripts.fa.gz
-    gunzip gencode.vM29.pc_transcripts.fa.gz
-    PC_FASTA="gencode.vM29.pc_transcripts.fa"
-    INDEX="salmon_gencode.vM29.index"
+    wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M27/gencode.vM27.pc_transcripts.fa.gz
+    gunzip gencode.vM27.pc_transcripts.fa.gz
+    PC_FASTA="gencode.vM27.pc_transcripts.fa"
+    INDEX="salmon_gencode.vM27.index"
 
     module load salmon
     call="salmon index -i ${INDEX} -k 31 --gencode -p 8 -t ${PC_FASTA}"
@@ -91,7 +91,7 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
     1. The script changes into the References directory.
     1. It uses wget to download the transcript fasta file from GENCODE.
     1. Uncompresses it using gunzip.
-    1. Run Salmon indexing, using the "gencode" flag to parse the GENCODE file properly, and outputting to a new directory called "salmon_gencode.vM29.index".
+    1. Run Salmon indexing, using the "gencode" flag to parse the GENCODE file properly, and outputting to a new directory called "salmon_gencode.vM27.index".
 
 1. Run salmon indexing when ready.
 
@@ -99,12 +99,12 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
     sbatch salmon_index.slurm
     ```
 
-    This step does not take long, about 15 minutes. You can look at the [salmon documentation](https://salmon.readthedocs.io/en/latest/salmon.html) while you wait. All of the output files will be written to the salmon_gencode.vM29.index directory.
+    This step does not take long, about 15 minutes. You can look at the [salmon documentation](https://salmon.readthedocs.io/en/latest/salmon.html) while you wait. All of the output files will be written to the salmon_gencode.vM27.index directory.
 
     **IF** for some reason it didn't finish, is corrupted, or you missed the session, you can **link** over a completed copy.
 
     ```bash
-    ln -s /share/biocore/workshops/2020_mRNAseq_July/References/salmon_gencode.vM29.index /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/.
+    ln -s /share/biocore/workshops/2020_mRNAseq_July/References/salmon_gencode.vM27.index /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/.
     ```
 ## Alignments
 
@@ -124,10 +124,10 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
     ```bash
     salmon quant \
     --threads 8 \
-    --index ../References/salmon_gencode.vM29.index \
+    --index ../References/salmon_gencode.vM27.index \
         --libType A \
         --validateMappings \
-        --geneMap ../References/gencode.vM29.annotation.gtf \
+        --geneMap ../References/gencode.vM27.annotation.gtf \
         --output mouse_110_WT_C.salmon \
         -1 mouse_110_WT_C_R1.fastq.gz \
         -2 mouse_110_WT_C_R2.fastq.gz
@@ -165,8 +165,8 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
 
     outdir="02-Salmon_alignment"
     sampfile="samples.txt"
-    REF="References/salmon_gencode.vM29.index"
-    GTF="References/gencode.vM29.annotation.gtf"
+    REF="References/salmon_gencode.vM27.index"
+    GTF="References/gencode.vM27.annotation.gtf"
 
     SAMPLE=`head -n ${SLURM_ARRAY_TASK_ID} $sampfile | tail -1`
     R1="01-HTS_Preproc/$SAMPLE/${SAMPLE}_R1.fastq.gz"
