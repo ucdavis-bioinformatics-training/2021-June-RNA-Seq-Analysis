@@ -50,7 +50,7 @@ Instructions on how to get an account will be sent by email
 
 If you already have, or have had in the past, an account on our systems, then please tell us your username, or email, and we will add you to the workshop. **Do not create a new account**
 
-Cluster usage will be under the slurm reservation  ‘mrnaseq_workshop’
+Cluster usage will be under the slurm reservation  ‘workshop’
 
 ## Contacts
 
@@ -91,4 +91,4 @@ See the ["Using Slack"](slack) topic in the menu for more information.
 
 #### Patience
 
-We ask for a little more patience as this process is also new to us, but we are comitted to providing you the best educational experience we can (under the current conditions).
+We ask for a little more patience as this process is also new to us, but we are committed to providing you the best educational experience we can (under the current conditions).
