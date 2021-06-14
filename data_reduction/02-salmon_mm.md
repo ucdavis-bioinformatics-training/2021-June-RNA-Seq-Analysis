@@ -25,6 +25,11 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
 
     We need to first get the urls for the and protein coding genes. For RNAseq we want to use the protein coding transcript sequences and basic gene annotation. At the time of this workshop the current version of GENCODE is *M29*. You will want to update the scripts to use the current version.
 
+    We will need:
+
+    *   Protein-coding transcript sequences (CHR)
+    *   Comprehensive gene annotation (PRI)
+
     <img src="alignment_mm_figures/mouse_gencode3.png" alt="mouse_gencode1" width="80%" style="border:5px solid #ADD8E6;"/>
 
     <img src="alignment_mm_figures/mouse_gencode4.png" alt="mouse_gencode2" width="80%" style="border:5px solid #ADD8E6;"/>
