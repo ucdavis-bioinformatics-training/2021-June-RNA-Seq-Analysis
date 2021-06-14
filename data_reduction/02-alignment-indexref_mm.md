@@ -17,9 +17,9 @@
     *   Genome sequence, primary assembly (GRCm39)
     *   Basic gene annotation (CHR)
 
-    <img src="alignment_mm_figures/MM_genome_sequences.png" alt="MM_genome_sequences" width="80%" style="border:5px solid #ADD8E6;"/>
+    <img src="alignment_mm_figures/mouse_gencode1.png" alt="MM_genome_sequences" width="80%" style="border:5px solid #ADD8E6;"/>
 
-    <img src="alignment_mm_figures/MM_comprehensive_gene_annotation.png" alt="MM_comprehensive_gene_annotation" width="80%" style="border:5px solid #ADD8E6;"/>
+    <img src="alignment_mm_figures/mouse_gencode2.png" alt="MM_comprehensive_gene_annotation" width="80%" style="border:5px solid #ADD8E6;"/>
 
 1. We are going to use an aligner called ['STAR'](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905/) to align the data. Lets take a look at the help docs for star:
 
