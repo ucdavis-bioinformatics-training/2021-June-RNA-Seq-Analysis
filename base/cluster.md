@@ -37,7 +37,7 @@ You'll notice the reservation extends to Dec-11-2020, you will have an extra wee
 
 ## First, what is a cluster?
 
-<img src="luster_diagram.png" alt="schematic depicting relationship between local computer, head node, and compute nodes" width="800px"/>
+<img src="cluster_diagram.png" alt="schematic depicting relationship between local computer, head node, and compute nodes" width="800px"/>
 
 The basic architecture of a compute cluster consists of a "head node", which is the computer from which a user submits jobs to run, and "compute nodes", which are a large number of computers on which the jobs can be run. It is also possible to log into a compute node and run jobs directly from there. **In general you should never run a job directly on the head node!**
 
