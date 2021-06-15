@@ -760,7 +760,7 @@ Primer dimers in this dataset:
 <img src="preproc_mm_figures/primer_dimers.png" alt="PrimerDimer" width="80%"/>
 
 
-* The set of "AAAA" bases directly adjacent to the Illumina adapter sequence are due to a spacing sequence on the flow cell. 
+* The set of "AAAA" bases directly adjacent to the Illumina adapter sequence are due to a spacing sequence on the flow cell.
 * The "GGGGG" sequences occur because the NovaSeq 6000 uses a 2-channel detection system, where the "G" base is the absence of signal. Once the polymerase reaches the end of the template + spacing sequence it stops, so all subsequent flow cycles produce no signal.
 
 
@@ -789,7 +789,7 @@ multiqc -i HTSMultiQC-cleaning-report -o 02-HTS_multiqc_report ./01-HTS_Preproc
 Transfer HTSMultiQC-cleaning-report_multiqc_report.html to your computer and open it in a web browser.
 
 
-Or in case of emergency, download this copy: [HTSMultiQC-cleaning-report_multiqc_report.html](HTSMultiQC-cleaning-report_multiqc_report.html)
+Or in case of emergency, download this copy: [HTSMultiQC-cleaning-report_multiqc_report.html](../datasets/HTSMultiQC-cleaning-report_multiqc_report.html)
 
 ### <font color='red'> End Group Exercise 3 </font>
 
