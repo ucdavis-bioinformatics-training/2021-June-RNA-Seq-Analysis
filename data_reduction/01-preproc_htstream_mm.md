@@ -196,7 +196,7 @@ When building a new pipeline, it is almost always a good idea to use a small sub
               -L mouse_110_WT_C.stats.json > out.tab
     ```
 
-    * *What happens if you run hts_Stats without piping output to out.tab?*
+    * *What happens if you run hts_Stats without redirecting output to out.tab?*
 
     * *Can you think of a way to view the output from hts_Stats in __less__ without creating out.tab?*
 
@@ -306,15 +306,6 @@ Or if you feel like 'cheating', copy the file from my project directory.
 
 ```bash
 cp /share/workshop/mrnaseq_workshop/hslyman/rnaseq_example/References/mouse_rrna.fasta /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/mouse_rrna.fasta
-```
-
-Paste contents of mouse_rrna.fa and save
-
-
-This is *really* cheating, but if all else fails, download the file as follows:
-```bash
-cd /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References
-wget https://github.com/ucdavis-bioinformatics-training/2021-June-RNA-Seq-Analysis/raw/master/data_reduction/mouse_rrna.fasta
 ```
 
 ### Using HTStream to count ribosomal rna (not remove, but just to count the occurrences).
