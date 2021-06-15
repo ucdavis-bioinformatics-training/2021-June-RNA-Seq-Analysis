@@ -35,6 +35,8 @@ navigation:
     url: base/cli_prerequisites
   - title: R
     url: base/r_prerequisites
+  - title: Cluster Computing
+    url: base/cluster
 
   - heading: Data Reduction
   - title: Files and Filetypes
