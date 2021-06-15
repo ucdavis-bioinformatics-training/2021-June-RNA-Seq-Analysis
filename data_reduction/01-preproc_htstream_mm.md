@@ -296,10 +296,16 @@ Save this file to your computer, and rename it to 'mouse_rrna.fasta'.
 
 Upload your mouse_rrna.fasta file **to the 'References' directory** in your project folder using either **scp** or FileZilla (or equivalent).
 
-Or if you feel like 'cheating', just copy/paste the contents of mouse_rrna.fa using nano into a file named /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/mouse_rrna.fasta
+Using scp from a terminal on **your local computer NOT tadpole** in the directory containing your downloaded and renamed FASTA file, you would use the code below, replacing "username" with your username.
 
 ```bash
-nano /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/mouse_rrna.fasta
+scp mouse_rrna.fasta username@tadpole.genomecenter.ucdavis.edu:/share/workshop/mrnaseq_workshop/username/rnaseq_example/References/
+```
+
+Or if you feel like 'cheating', copy the file from my project directory.
+
+```bash
+cp /share/workshop/mrnaseq_workshop/hslyman/rnaseq_example/References/mouse_rrna.fasta /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/mouse_rrna.fasta
 ```
 
 Paste contents of mouse_rrna.fa and save
