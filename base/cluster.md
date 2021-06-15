@@ -168,7 +168,7 @@ To view the same information for all jobs of a user (replace username with your 
 
     module avail
 
-<img src="figures/modules_figure1.png" alt="modules_figure1" width="800px"/>
+<img src="modules_figure1.png" alt="results of running module avail" width="800px"/>
 
 This is a list of all the software (with different versions) that you can access. The format of 'modules' is software/version here you can see htstream has 3 different versions installed with the latest being 1.0.0. When you load a module without specifying a version, it will load the default (generally the latest) version. If you need an older version, you need to use the cooresponding version number:
 
