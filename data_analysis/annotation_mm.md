@@ -1,6 +1,6 @@
 # Retreiving Annotation via biomart
 
-Annotation from [BioMart](https://uswest.ensembl.org/biomart/martview/) with Ensembl names is most flexible way to retrieve tabular annotation for an organism.
+Annotation from [BioMart](https://uswest.ensembl.org/biomart/martview/)  with Ensembl names is most flexible way to retrieve tabular annotation for an organism.
 
 1. The [Biomart](https://uswest.ensembl.org/biomart/martview/) start page should look like ...
 
@@ -24,7 +24,7 @@ Annotation from [BioMart](https://uswest.ensembl.org/biomart/martview/) with Ens
 
 <img src="annotation_mm_figures/annotation_figures8.png" alt="annotation_figures8" width="80%" style="border:5px solid #ADD8E6;"/>
 
-1. Expand the 'GENE' tab, and select the attributes you want to retreive. **HERE** recreate the list you see on the left side.
+1. Expand the 'GENE' tab, and select the attributes you want to retrieve. **HERE** recreate the list you see on the left side.
 
 <img src="annotation_mm_figures/annotation_figures9.png" alt="annotation_figures9" width="80%" style="border:5px solid #ADD8E6;"/>
 
@@ -36,4 +36,4 @@ Annotation from [BioMart](https://uswest.ensembl.org/biomart/martview/) with Ens
 
 <img src="annotation_mm_figures/annotation_figures11.png" alt="annotation_figures11" width="80%" style="border:5px solid #ADD8E6;"/>
 
-1. The file will save as "mart_export.txt", put the file into our working directory, rename to "ensembl_mm_100.tsv" and open the file in Excel to view the annotation.
+1. The file will save as "mart_export.txt", put the file into our working directory, rename to "ensembl_mm_104.tsv" and open the file in Excel to view the annotation.
