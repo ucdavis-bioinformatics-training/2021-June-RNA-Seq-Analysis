@@ -132,11 +132,11 @@ Create Differential Gene Expression List Object (DGEList) object
 ```r
 d0 <- DGEList(counts)
 ```
-  
+
 **1a\.** Read in Annotation
 
 ```r
-anno <- read.delim("ensembl_mm_100.tsv",as.is=T)
+anno <- read.delim("ensembl_mm_104.tsv",as.is=T)
 dim(anno)
 ```
 
@@ -242,8 +242,8 @@ table(metadata$group)
 ```
 
 ```
-## 
-##  KOMIR150.C    KOTet3.C        WT.C KOMIR150.NC   KOTet3.NC       WT.NC 
+##
+##  KOMIR150.C    KOTet3.C        WT.C KOMIR150.NC   KOTet3.NC       WT.NC
 ##           3           3           5           3           2           6
 ```
 
@@ -252,8 +252,8 @@ table(metadata$mouse)
 ```
 
 ```
-## 
-##  110  148  158  183  198  206 2670 7530 7531 7532 H510 H514 
+##
+##  110  148  158  183  198  206 2670 7530 7531 7532 H510 H514
 ##    2    2    2    2    2    2    2    2    1    1    2    2
 ```
 
@@ -540,7 +540,7 @@ tmp <- eBayes(tmp)
 
 The TopTable. Ajust by Benjamini & Hochberg (BH), or its 'alias' fdr. "[Controlling the false discovery rate: a practical and powerful approach to multiple testing](http://www.jstor.org/stable/2346101).
 
-here `n=Inf` says to produce the topTable for **all** genes. 
+here `n=Inf` says to produce the topTable for **all** genes.
 
 ```r
 top.table <- topTable(tmp, adjust.method = "BH", sort.by = "P", n = Inf)
@@ -568,7 +568,7 @@ length(which(top.table$adj.P.Val < 0.05))
 
 ## 8. Check your results for confidence.
 
-You've conducted an experiment, you've seen a phenotype. Now check which genes are most deferentially expressed (show the top 50)? Look up these top genes, their description and ensure they relate to your experiment/phenotype. 
+You've conducted an experiment, you've seen a phenotype. Now check which genes are most deferentially expressed (show the top 50)? Look up these top genes, their description and ensure they relate to your experiment/phenotype.
 
 ```r
 head(top.table, 50)
@@ -704,21 +704,21 @@ d0$counts["ENSMUSG00000079018",]
 ```
 
 ```
-##        mouse_110_WT_C       mouse_110_WT_NC        mouse_148_WT_C 
-##                     2                     0                     2 
-##       mouse_148_WT_NC        mouse_158_WT_C       mouse_158_WT_NC 
-##                     0                     2                     0 
-##  mouse_183_KOMIR150_C mouse_183_KOMIR150_NC  mouse_198_KOMIR150_C 
-##                     1                     0                     1 
-## mouse_198_KOMIR150_NC  mouse_206_KOMIR150_C mouse_206_KOMIR150_NC 
-##                     0                     1                     0 
-##   mouse_2670_KOTet3_C  mouse_2670_KOTet3_NC   mouse_7530_KOTet3_C 
-##                     2                     0                     2 
-##  mouse_7530_KOTet3_NC   mouse_7531_KOTet3_C      mouse_7532_WT_NC 
-##                     0                     1                     0 
-##       mouse_H510_WT_C      mouse_H510_WT_NC       mouse_H514_WT_C 
-##                     1                     0                     2 
-##      mouse_H514_WT_NC 
+##        mouse_110_WT_C       mouse_110_WT_NC        mouse_148_WT_C
+##                     2                     0                     2
+##       mouse_148_WT_NC        mouse_158_WT_C       mouse_158_WT_NC
+##                     0                     2                     0
+##  mouse_183_KOMIR150_C mouse_183_KOMIR150_NC  mouse_198_KOMIR150_C
+##                     1                     0                     1
+## mouse_198_KOMIR150_NC  mouse_206_KOMIR150_C mouse_206_KOMIR150_NC
+##                     0                     1                     0
+##   mouse_2670_KOTet3_C  mouse_2670_KOTet3_NC   mouse_7530_KOTet3_C
+##                     2                     0                     2
+##  mouse_7530_KOTet3_NC   mouse_7531_KOTet3_C      mouse_7532_WT_NC
+##                     0                     1                     0
+##       mouse_H510_WT_C      mouse_H510_WT_NC       mouse_H514_WT_C
+##                     1                     0                     2
+##      mouse_H514_WT_NC
 ##                     0
 ```
 
@@ -1659,11 +1659,11 @@ sessionInfo()
 ## R version 3.6.1 (2019-07-05)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 19.10
-## 
+##
 ## Matrix products: default
 ## BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.8.0
 ## LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.8.0
-## 
+##
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
 ##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
@@ -1671,13 +1671,13 @@ sessionInfo()
 ##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
-## 
+##
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
-## 
+##
 ## other attached packages:
 ## [1] gplots_3.0.3       RColorBrewer_1.1-2 edgeR_3.28.1       limma_3.42.2      
-## 
+##
 ## loaded via a namespace (and not attached):
 ##  [1] Rcpp_1.0.4.6       locfit_1.5-9.4     lattice_0.20-41    gtools_3.8.2      
 ##  [5] digest_0.6.25      bitops_1.0-6       grid_3.6.1         magrittr_1.5      

@@ -61,10 +61,10 @@ Create Differential Gene Expression List Object (DGEList) object
 ```{r dgelist}
 d0 <- DGEList(counts)
 ```
-  
+
 **1a\.** Read in Annotation
 ```{r read_annotation}
-anno <- read.delim("ensembl_mm_100.tsv",as.is=T)
+anno <- read.delim("ensembl_mm_104.tsv",as.is=T)
 dim(anno)
 head(anno)
 tail(anno)
@@ -221,7 +221,7 @@ tmp <- eBayes(tmp)
 
 The TopTable. Ajust by Benjamini & Hochberg (BH), or its 'alias' fdr. "[Controlling the false discovery rate: a practical and powerful approach to multiple testing](http://www.jstor.org/stable/2346101).
 
-here `n=Inf` says to produce the topTable for **all** genes. 
+here `n=Inf` says to produce the topTable for **all** genes.
 ```{r toptable}
 top.table <- topTable(tmp, adjust.method = "BH", sort.by = "P", n = Inf)
 ```
@@ -243,7 +243,7 @@ length(which(top.table$adj.P.Val < 0.05))
 
 ## 8. Check your results for confidence.
 
-You've conducted an experiment, you've seen a phenotype. Now check which genes are most deferentially expressed (show the top 50)? Look up these top genes, their description and ensure they relate to your experiment/phenotype. 
+You've conducted an experiment, you've seen a phenotype. Now check which genes are most deferentially expressed (show the top 50)? Look up these top genes, their description and ensure they relate to your experiment/phenotype.
 ```{r de_genes_top50}
 head(top.table, 50)
 ```
