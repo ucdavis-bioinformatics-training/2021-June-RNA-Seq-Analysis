@@ -14,8 +14,8 @@
 *This document assumes [preproc htstream](./preproc_htstream.md) has been completed.*
 **IF** for some reason it didn't finish, is corrupted or you missed the session, you can link over a completed copy
 ```
-cp -r /share/biocore/workshops/2020_mRNAseq_July/HTS_testing /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/.
-cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/.
+cp -r /share/workshop/mrnaseq_workshop/msettles/rnaseq_example/HTS_testing /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/.
+cp -r /share/workshop/mrnaseq_workshop/msettles/rnaseq_example/01-HTS_Preproc /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/.
 ```
 
 
@@ -24,8 +24,8 @@ cp -r /share/biocore/workshops/2020_mRNAseq_July/01-HTS_Preproc /share/workshop/
 **IF** will need to run this command to update some reference changes our group made last night.
 
 ```bash
-rm -rf  /share/biocore/workshops/2020_mRNAseq/References/star_2.7.3a_index_GRCm39
-ln -s /share/biocore/workshops/2020_mRNAseq/References/star_2.7.3a_index_GRCm39 /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/.
+rm -rf  /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/star.overlap100.gencode.M27
+ln -s /share/workshop/mrnaseq_workshop/msettles/rnaseq_example/References/star.overlap100.gencode.M27 /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/References/.
 ```
 
 ---
@@ -240,7 +240,7 @@ What does stranded and unstranded mean? Which is better and why? [Stranded vs Un
     **IF** for some reason it didn't finish, is corrupted or you missed the session, you can copy over a completed copy
 
     ```bash
-    cp -r /share/biocore/workshops/2020_mRNAseq_July/HTS_testing/star_Aligned.sortedByCoord.out.bam* /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/HTS_testing
+    cp -r /share/workshop/mrnaseq_workshop/msettles/rnaseq_example/HTS_testing/star_Aligned.sortedByCoord.out.bam* /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/HTS_testing
     ```
 
 2. Transfer mouse_110_WT_C.star_Aligned.sortedByCoord.out.bam and mouse_110_WT_C.star_Aligned.sortedByCoord.out.bam.bai (the index file) to your computer using scp or winSCP, or copy/paste from cat [sometimes doesn't work].
