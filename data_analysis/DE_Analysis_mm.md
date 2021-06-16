@@ -726,7 +726,7 @@ Ly6c1 was removed from our data by the filtering step, because the maximum count
 ```r
 top.table$Gene <- rownames(top.table)
 top.table <- top.table[,c("Gene", names(top.table)[1:6])]
-top.table <- data.frame(top.table,anno[match(top.table$Gene,anno$Gene.stable.ID),],logcpm[match(top.table$Gene,rownames(logcpm)),])
+top.table <- data.frame(top.table,anno[match(top.table$Gene,anno$Gene.stable.ID.version),],logcpm[match(top.table$Gene,rownames(logcpm)),])
 
 head(top.table)
 ```
@@ -739,41 +739,48 @@ head(top.table)
 ## ENSMUSG00000030203.18 ENSMUSG00000030203.18 -4.120822  6.994223 -34.50726
 ## ENSMUSG00000021990.17 ENSMUSG00000021990.17 -2.675552  8.357254 -33.50752
 ## ENSMUSG00000026193.16 ENSMUSG00000026193.16  4.806490 10.144216  33.15139
-##                            P.Value    adj.P.Val        B Gene.stable.ID
-## ENSMUSG00000020608.8  1.162922e-19 1.506450e-15 35.28095           <NA>
-## ENSMUSG00000049103.15 7.630203e-19 3.576675e-15 33.50073           <NA>
-## ENSMUSG00000052212.7  8.283175e-19 3.576675e-15 32.85197           <NA>
-## ENSMUSG00000030203.18 1.182848e-17 3.830654e-14 30.67902           <NA>
-## ENSMUSG00000021990.17 1.973093e-17 4.488344e-14 30.25682           <NA>
-## ENSMUSG00000026193.16 2.376095e-17 4.488344e-14 29.99183           <NA>
-##                       Gene.stable.ID.version Gene.name Gene.description
-## ENSMUSG00000020608.8                    <NA>      <NA>             <NA>
-## ENSMUSG00000049103.15                   <NA>      <NA>             <NA>
-## ENSMUSG00000052212.7                    <NA>      <NA>             <NA>
-## ENSMUSG00000030203.18                   <NA>      <NA>             <NA>
-## ENSMUSG00000021990.17                   <NA>      <NA>             <NA>
-## ENSMUSG00000026193.16                   <NA>      <NA>             <NA>
-##                       Gene.type Transcript.count Gene...GC.content
-## ENSMUSG00000020608.8       <NA>               NA                NA
-## ENSMUSG00000049103.15      <NA>               NA                NA
-## ENSMUSG00000052212.7       <NA>               NA                NA
-## ENSMUSG00000030203.18      <NA>               NA                NA
-## ENSMUSG00000021990.17      <NA>               NA                NA
-## ENSMUSG00000026193.16      <NA>               NA                NA
+##                            P.Value    adj.P.Val        B     Gene.stable.ID
+## ENSMUSG00000020608.8  1.162922e-19 1.506450e-15 35.28095 ENSMUSG00000020608
+## ENSMUSG00000049103.15 7.630203e-19 3.576675e-15 33.50073 ENSMUSG00000049103
+## ENSMUSG00000052212.7  8.283175e-19 3.576675e-15 32.85197 ENSMUSG00000052212
+## ENSMUSG00000030203.18 1.182848e-17 3.830654e-14 30.67902 ENSMUSG00000030203
+## ENSMUSG00000021990.17 1.973093e-17 4.488344e-14 30.25682 ENSMUSG00000021990
+## ENSMUSG00000026193.16 2.376095e-17 4.488344e-14 29.99183 ENSMUSG00000026193
+##                       Gene.stable.ID.version Gene.name
+## ENSMUSG00000020608.8    ENSMUSG00000020608.8      Smc6
+## ENSMUSG00000049103.15  ENSMUSG00000049103.15      Ccr2
+## ENSMUSG00000052212.7    ENSMUSG00000052212.7     Cd177
+## ENSMUSG00000030203.18  ENSMUSG00000030203.18    Dusp16
+## ENSMUSG00000021990.17  ENSMUSG00000021990.17   Spata13
+## ENSMUSG00000026193.16  ENSMUSG00000026193.16       Fn1
+##                                                                                  Gene.description
+## ENSMUSG00000020608.8  structural maintenance of chromosomes 6 [Source:MGI Symbol;Acc:MGI:1914491]
+## ENSMUSG00000049103.15         chemokine (C-C motif) receptor 2 [Source:MGI Symbol;Acc:MGI:106185]
+## ENSMUSG00000052212.7                            CD177 antigen [Source:MGI Symbol;Acc:MGI:1916141]
+## ENSMUSG00000030203.18         dual specificity phosphatase 16 [Source:MGI Symbol;Acc:MGI:1917936]
+## ENSMUSG00000021990.17            spermatogenesis associated 13 [Source:MGI Symbol;Acc:MGI:104838]
+## ENSMUSG00000026193.16                             fibronectin 1 [Source:MGI Symbol;Acc:MGI:95566]
+##                            Gene.type Transcript.count Gene...GC.content
+## ENSMUSG00000020608.8  protein_coding               12             38.40
+## ENSMUSG00000049103.15 protein_coding                4             38.86
+## ENSMUSG00000052212.7  protein_coding                2             52.26
+## ENSMUSG00000030203.18 protein_coding                7             41.74
+## ENSMUSG00000021990.17 protein_coding                9             47.38
+## ENSMUSG00000026193.16 protein_coding               17             43.66
 ##                       Chromosome.scaffold.name Gene.start..bp. Gene.end..bp.
-## ENSMUSG00000020608.8                      <NA>              NA            NA
-## ENSMUSG00000049103.15                     <NA>              NA            NA
-## ENSMUSG00000052212.7                      <NA>              NA            NA
-## ENSMUSG00000030203.18                     <NA>              NA            NA
-## ENSMUSG00000021990.17                     <NA>              NA            NA
-## ENSMUSG00000026193.16                     <NA>              NA            NA
+## ENSMUSG00000020608.8                        12        11315887      11369786
+## ENSMUSG00000049103.15                        9       123901987     123913594
+## ENSMUSG00000052212.7                         7        24443408      24459736
+## ENSMUSG00000030203.18                        6       134692431     134769588
+## ENSMUSG00000021990.17                       14        60871450      61002005
+## ENSMUSG00000026193.16                        1        71624679      71692359
 ##                       Strand mouse_110_WT_C mouse_110_WT_NC mouse_148_WT_C
-## ENSMUSG00000020608.8      NA       6.624180        9.067061       7.044276
-## ENSMUSG00000049103.15     NA      10.898210        8.821314      11.259023
-## ENSMUSG00000052212.7      NA       8.612549        4.153554       8.373256
-## ENSMUSG00000030203.18     NA       4.995600        8.975553       5.198700
-## ENSMUSG00000021990.17     NA       6.968790        9.548885       7.355297
-## ENSMUSG00000026193.16     NA      12.915767        7.928271      12.391111
+## ENSMUSG00000020608.8       1       6.624180        9.067061       7.044276
+## ENSMUSG00000049103.15      1      10.898210        8.821314      11.259023
+## ENSMUSG00000052212.7      -1       8.612549        4.153554       8.373256
+## ENSMUSG00000030203.18     -1       4.995600        8.975553       5.198700
+## ENSMUSG00000021990.17      1       6.968790        9.548885       7.355297
+## ENSMUSG00000026193.16     -1      12.915767        7.928271      12.391111
 ##                       mouse_148_WT_NC mouse_158_WT_C mouse_158_WT_NC
 ## ENSMUSG00000020608.8         9.420064       6.775251        9.189817
 ## ENSMUSG00000049103.15        8.960843      11.075129        8.726306
