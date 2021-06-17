@@ -35,8 +35,8 @@ All posted times are **Pacific** time zone. At least one break will be provided 
 | **9:00 am**  | Alignment with STAR                  |
 | **12:00 pm** | Lunch                |
 | **1:00 pm**  | Generating counts tables                |
-| **3:00 pm**  | R Prerequisites / Review               |
-| **4:30 pm**  | Prepare R for Analysis                |
+| **3:00 pm**  | Prepare R for Analysis               |
+| **4:00 pm**  | *What is Bioinformatics?*                |
 | **5:00 pm**  | Zoom session ends    |
 
 ### Thursday, June 17
@@ -44,7 +44,10 @@ All posted times are **Pacific** time zone. At least one break will be provided 
 | :----------- | :------------------- |
 | ------------ | -------------------- |
 | **8:50 am**  | Zoom session starts  |
+| **9:00 am**  | R Prerequisites / Review       |
 | **12:00 pm** | Lunch                |
+| **1:00 pm**  | Experimental Design                |
+| **2:00 pm**  | Differential Expression Analysis   |
 | **5:00 pm**  | Zoom session ends    |
 
 ### Friday, June 18
