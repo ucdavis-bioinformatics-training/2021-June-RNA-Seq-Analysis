@@ -61,7 +61,7 @@ navigation:
     url: data_analysis/annotation_mm
   - title: Differential Expression Analysis
     url: data_analysis/DE_Analysis_mm_with_quizzes
-    - title:   DE Quizzes R Code
+  - title:   DE Quizzes R Code
     url: data_analysis/R_code_for_DE_quizzes
   - title: Pathway Analysis
     url: data_analysis/enrichment_mm_with_quizzes
