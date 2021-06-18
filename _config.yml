@@ -65,6 +65,8 @@ navigation:
     url: data_analysis/R_code_for_DE_quizzes
   - title: Pathway Analysis
     url: data_analysis/enrichment_mm_with_quizzes
+  - title: Enrichment Quizzes R Code
+    url: data_analysis/R_code_for_enrichment_quizzes
   - title: Comparison between STAR and Salmon
     url: data_analysis/compare_star_salmon_mm
 
