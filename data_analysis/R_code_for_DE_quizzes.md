@@ -3,13 +3,19 @@ R code for selected quizzes/questions from the DE Analysis section
 ## Quiz 1
 
 How many genes are in the counts table?
+```
 nrow(counts)
+```
 
 How many samples are in the counts table?
+```
 ncol(counts)
+```
 
 What is the total count across all genes for sample mouse_110_WT_C?
+```
 colSums(counts)["sample mouse_110_WT_C"]
+```
 
 How many genes have a count of 0 in every sample?
 sum(rowSums(counts) == 0)
