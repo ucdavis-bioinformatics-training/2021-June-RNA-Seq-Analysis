@@ -55,5 +55,8 @@ All posted times are **Pacific** time zone. At least one break will be provided 
 | :----------- | :------------------- |
 | ------------ | -------------------- |
 | **8:50 am**  | Zoom session starts  |
+| **9:00 am**  | Differential Expression Analysis  |
 | **12:00 pm** | Lunch                |
+| **1:00 pm**  | Enrichment  |
+| **3:30 pm**  | Comparison: STAR vs Salmon   |
 | **5:00 pm**  | Zoom session ends    |
