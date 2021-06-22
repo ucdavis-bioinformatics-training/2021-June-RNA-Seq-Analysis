@@ -56,3 +56,13 @@ What is the adjusted p-value for the last gene with unadjusted P < 0.05?
 ```
 top.table$adj.P.Val[max(which(top.table$P.Value < 0.05))]
 ```
+
+## Quiz 4
+For the model ~0 + group + mouse, how many genes are differentially expressed between WT NC and KOMIR150 NC?
+```
+mm.1 <- model.matrix(~0 + group + mouse)
+y.1 <- voom(d, mm.1); fit.1 <- lmFit(y.1, mm.1)
+tmp.1 <- contrasts.fit(fit.1, contrasts = makeContrasts(groupWT.NC - groupKOMIR150.NC, levels = colnames(coef(fit.1))))
+tmp.1 <- eBayes(tmp.1)
+length(which(topTable(tmp.1, n = Inf, sort.by = "P")$adj.P.Val < 0.05))
+```
