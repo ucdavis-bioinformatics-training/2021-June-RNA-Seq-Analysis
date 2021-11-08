@@ -5,11 +5,15 @@
 ##### HEADER 5
 
 **bold**
-+ List 
++ List
     - list
-    - list 
+    - list
     - list
 
+Hello world!
+
+|-----|-----|
+| table | table |
 
 
 ## HORIZONTAL RULE
@@ -19,7 +23,7 @@ Three or more...
 
 Hyphens (---)
 
-*** 
+***
 
 Asterisks (***)
 
@@ -92,7 +96,7 @@ cond1 = True
 cond2 = False
 if cond1 and cond2:
     # do something
-    
+
 </code></pre>
 
 <pre class="prettyprint"><code class="language-R" style="background-color:333333">
@@ -102,7 +106,7 @@ top.table <- top.table[,c("Gene", names(top.table)[1:6])]
 top.table <- data.frame(top.table,anno[match(top.table$Gene,anno$Gene.stable.ID.version),],logcpm[match(top.table$Gene,rownames(logcpm)),])
 
 write.table(top.table, file = "A.C_v_B.C.txt", row.names = F, sep = "\t", quote = F)
-    
+
 </code></pre>
 
 ## Embedding PDFs
